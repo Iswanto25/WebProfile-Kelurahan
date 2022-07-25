@@ -1,6 +1,7 @@
 <?php
 $site = $this->konfigurasi_model->listing();
 ?>
+
 <style type="text/css" media="screen">
   .kontakwa {
     z-index: 9999;
@@ -13,9 +14,6 @@ $site = $this->konfigurasi_model->listing();
     font-size: 40px;
     color: white;
     text-align: center;
-    /* border-top: solid 2px green;
-    border-left: solid 2px green;
-    border-right: solid 2px green; */
     min-width: 80px;
     border-radius: 0 10px 0 0;
   }
@@ -47,14 +45,7 @@ $site = $this->konfigurasi_model->listing();
 
   }
 </style>
-<div class="telepon">
-  <a href="tel:<?php echo $site->telepon ?>"><i class="fa fa-phone"></i></a>
-</div>
-<div class="kontakwa">
-  <a href="https://wa.me/<?php echo str_replace('+','',$site->hp) ?>?text=Saya%20tertarik%20untuk%20Menggunakan%20Layanan%20di%20Perusahan%20Anda.%20Apakah%20bisa%20dibantu?" class="topbar-social-item"><i class="fa fa-whatsapp"></i>
-        </a>
-</div>
-<!-- END WA -->
+
 <?php 
 $site           = $this->konfigurasi_model->listing();
 $nav_profil     = $this->nav_model->nav_profil();
@@ -97,27 +88,16 @@ $nav_profil     = $this->nav_model->nav_profil();
             <!-- .col-md-4 -->
             <div class="col-md-6 col-sm-6">
                 <div class="footer-widgets">
-                    <div class="widgets-title">
-                        <h3>Latest News</h3>
-                    </div>
                     <!-- .widgets-title -->
-                    <ul class="latest-news">
-                        <?php foreach($nav_profil as $nav_profil) { ?>
-                        <li>
-                            <span class="thumbnail-img">
-                            <?php if($nav_profil->gambar !="") { ?>
-                                <img src="<?php echo base_url('assets/upload/image/'.$nav_profil->gambar) ?>" alt="<?php echo $nav_profil->judul_berita ?>" class="img-responsive" />
-                            <?php }else{ ?>
-                                <img src="<?php echo base_url('assets/upload/image/'.$site->icon) ?>" alt="<?php echo $nav_profil->judul_berita ?>" class="img-responsive" />
-                            <?php } ?>
-                        </span>
-                            <div class="thumbnail-content">
-                                <h5><a href="<?php echo base_url('berita/profil/'.$nav_profil->slug_berita) ?>"><?php echo $nav_profil->judul_berita ?></a></h5>
-                            </div>
-                            <!-- .thumbnail-content -->
-                        </li>
-                        <?php } ?>
-                    </ul>
+                    <div class="row">
+                      <div class="col-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0772333973014!2d109.12836921435725!3d-6.8813510950274335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658436135301!5m2!1sid!2sid" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                      <div class="col-sm">
+                        <h1>hello</h1>
+                      </div>
+                    </div>
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2691576632627!2d109.12972504840029!3d-6.881423337702933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658371522203!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                 </div>
                 <!-- .footer-widgets -->
             </div>
@@ -135,28 +115,27 @@ $nav_profil     = $this->nav_model->nav_profil();
 <!-- .bg-footer-top -->
 
 <div class="bg-footer-bottom">
-<div class="container">
-<div class="row">
-    <div class="footer-bottom">
-        <div class="copyright-txt">
-            <p>&copy; <?php echo date('Y') ?>. Designer By <a href="http://javawebmedia.com" title="Java Web Media">Java Web Media</a></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="footer-bottom">
+          <div class="copyright-txt">
+          <p>Copyright &copy; <?php 
+          echo date('Y')?> <a href="http://iswantoprofile.my.id"> Iswanto Group</a></p>
+          </div>
         </div>
-        <!-- .copyright-txt -->
-        <div class="social-box">
-            <ul class="social-icon-rounded">
-                <li><a href="<?php echo $site->facebook ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="<?php echo $site->instagram ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="<?php echo $site->twitter ?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-            </ul>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <!-- <div class="social-box">
+        <p id="demo">
+          <?php 
+          date_default_timezone_set('Asia/Jakarta');
+          echo date('Y.m.d H:i:s'); ?>
+        </p> -->
         </div>
-        <!-- .social-box -->
-
+      </div>
     </div>
-    <!-- .footer-bottom -->
-</div>
-<!-- .row -->
-</div>
-<!-- .container -->
+  </div>
 </div>
 <!-- .bg-footer-bottom -->
 

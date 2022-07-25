@@ -70,6 +70,7 @@ echo form_open_multipart(base_url('admin/berita/edit/'.$berita->id_berita));
 	<option value="Berita">Berita</option>
 	<option value="Profil"  <?php if($berita->jenis_berita=="Profil") { echo "selected"; } ?>>Profil</option>
   <option value="Layanan"  <?php if($berita->jenis_berita=="Layanan") { echo "selected"; } ?>>Layanan</option>
+  <option value="Lembaga"  <?php if($berita->jenis_berita=="Lembaga") { echo "selected"; } ?>>Lembaga</option>
 </select>
 
 </div>

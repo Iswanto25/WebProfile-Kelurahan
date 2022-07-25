@@ -1160,10 +1160,16 @@ section{
 /*======================
 	Start Header css
 ===============================================*/
+.header-style-1 .bg-header-top .header-top{
+	/* padding: 16px 0; */
+	height: max-content;
 
+}
 
 .header-style-1 .bg-header-top{
 	padding: 16px 0;
+	background-color: #000;
+
 }
 .header-style-1 .header-contact{
 	overflow: hidden;
@@ -1200,13 +1206,15 @@ section{
 	display: none;
 }
 .header-style-1 .bg-main-menu{
-	background: #0099cc;
+	background: #a0a9ac;
 }
 .header-style-1 .main-menu .navbar, 
 .header-style-2 .main-menu .navbar, 
 .header-style-3 .main-menu .navbar{
 	margin-bottom: 0;
 	border: 0;
+	/* height: 50px; */
+	/* height: 100px; */
 }
 
 .header-style-1 .main-menu .nav>li>a, 
@@ -1214,17 +1222,17 @@ section{
 .header-style-3 .main-menu .nav>li>a{
 	font-size: 14px;
 	font-weight: 600;
-	color: #ffffff;
-	line-height: 24px;
+	/* color: #971c1c; */
+	/* line-height: 24px; */
 	text-transform: uppercase;
-	padding: 23px 21px;
+	/* padding: 23px 21px; */
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
 .header-style-1 .main-menu .nav>li:nth-child(1)>a, 
 .header-style-2 .main-menu .nav>li:nth-child(1)>a,
 .header-style-3 .main-menu .nav>li:nth-child(1)>a{
-	padding-left: 0;
+	/* padding-left: 0; */
 }
 .header-style-1 .navbar-collapse, 
 .header-style-2 .navbar-collapse,
@@ -1262,7 +1270,7 @@ section{
 		border-radius: 0;
 		-webkit-transition: all.3s ease-in-out;
 		transition: all .3s ease-in-out;
-		background: #0099cc;
+		background: #ecf0f1;
 		-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
 		box-shadow: 0 5px 12px rgba(0,0,0,.175);
 
@@ -1321,9 +1329,10 @@ section{
 .sub-sub-menu li a{
 	font-size: 14px;
 	font-weight: 600;
-	color: #fff;
-	text-transform: uppercase;
-	padding: 13px 10px 10px 8px;
+	color: #0099cc;
+	/* text-transform: uppercase; */
+	padding: 10px 10px;
+	width: min-content;
 }
 .header-style-1 .main-menu .sub-menu li a .fa,
 .header-style-2 .main-menu .sub-menu li a .fa,
@@ -1622,11 +1631,21 @@ section{
 /*======================
 	Start Slider
 ================================*/
+.hero-image{
+	width: 100%;
+	height: 70vh;
+}
+.hero-image img {
+	width: 100%;
+	height: fit-content;
+	background-image: ;
+}
 
 .slider-item {
 	position: relative;
 	max-height: 800px;
-	height: 100%;
+	height: 80vh;
+	background-position: center;
 }
 .slider-item img{
 	width: 100%;
@@ -2286,7 +2305,7 @@ section{
 
 .bg-footer-top{
 	background: #000000;
-	padding: 95px 0 85px;
+	padding: 10px 0 10px;
 }
 .widgets-title{
 	margin-bottom: 32px;
@@ -2407,33 +2426,58 @@ section{
 	height: 84px;
 }
 .bg-footer-bottom{
-	background: #f4f4f4;
-	padding: 28px 0 23px 0;
+	/* color: #707070; */
+	background: #ffffff;
+	padding: 0px;
+	/* padding-top: 10px; */
+	font-size: 16px;
+	height: 50px;
 }
 .footer-bottom{}
 .copyright-txt{
 	float: left;
+
 }
 .copyright-txt p{
 	font-size: 16px;
-	color: #707070;
-	padding-top: 8px;
+	/* color: #707070; */
+	padding-top: 10px;
+	margin-bottom: 0px;
+	/* padding-bottom: 10px; */
 }
 .copyright-txt p a{
-	color: #0099cc;
+	/* color: #0099cc; */
 	font-weight: 700;
+	/* color: #707070; */
 }
 .copyright-txt p a:hover{
 	color: #000000;
 }
 .social-box{
+	/* float: right; */
+	/* padding-top: 5px; */
+	font-size: 16px;
+	color: #707070;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	float: inline-end;
+}
+.social-box p{
+	font-size: 16px;
+	color: #707070;
+	/* padding-top: 10px; */
+	margin-bottom: 0px;
+	font-weight: bold;
 	float: right;
+	/* display: ; */
 }
 .social-icon-rounded{}
 .social-icon-rounded li{
 	display: inline-block;
 	overflow: hidden;
-	margin: 0 3px;
+	/* margin: 0 3px; */
+	/* padding-top: 5px; */
 }
 .social-icon-rounded li:last-child{
 	margin-right: 0;
@@ -2442,13 +2486,13 @@ section{
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	line-height: 41px;
+	line-height: 43px;
 	text-align:center;
 	font-size: 18px;
-	color: #0099cc;
-	border: 2px solid #0099cc;
+	color: #fcfcfc;
+	/* border: 2px solid #0099cc; */
 	border-radius: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 
@@ -2479,8 +2523,41 @@ section{
 	float: right;
 }
 .header-style-2 .bg-header-top{
-	background: #0099cc;
-    color: #FFF;
+	/* background: #e92828;
+	/* background: url(../images/about/header.jpg) rgb(247, 14, 14); */
+    /* color: #FFF; */
+	/* background-color: #000; */
+	/* background-repeat: no-repeat; */
+	/* background-position: center; */
+	/* background-size: cover; */
+	/* height: 200px; */
+	/* z-index: -2; */
+	background-color: #0099cc;
+}
+.header-style-2 .bg-header-top::after{
+	/* position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1; */
+	
+}
+.header-style-2 .bg-header-top h2{
+	color: #ffd700;
+	font-weight: 700;
+	text-indent: 10px;
+	font-size: 50px;
+	letter-spacing: 5px;
+	z-index: 2;
+}
+.header-style-2 .bg-header-top p{
+	color: white;
+	font-weight: 600;
+	letter-spacing: 2px;
+	z-index: 2;
 }
 .header-style-2 .menu-scroll.menu-fixed{
 	box-shadow: 0 0 7px 0 #ddd;
@@ -2527,16 +2604,22 @@ section{
 }
 .navbar-brand{
 	padding-left: 0;
+	/* padding-top: 1; */
+	padding: 5px 0;
 }
 .header-style-2 .bg-main-menu{
-	background: #ffffff;
+	background: #292b2c;
+	color: white;
+	height: 70px;
 }
 .header-style-2 .main-menu .nav>li>a{
-	color: #000000;
+	/* color: #000000; */
+	color: white;
 }
 .header-style-2 .main-menu .nav>li>a:hover, 
 .header-style-3 .main-menu .nav>li>a:hover{
 	color: #0099cc;
+	background-color: white;
 }
 .header-style-2 .main-menu .nav>li.active a{
 	color: #0099cc;
@@ -2562,7 +2645,7 @@ section{
 }
 .header-style-2 .main-menu .nav>li>a, 
 .header-style-3 .main-menu .nav>li>a{
-	padding: 33px 17px;
+	padding: 25px 17px;
 }
 .header-style-2 .main-menu .sub-menu li a:hover, 
 .header-style-3 .main-menu .sub-menu li a:hover{
@@ -5997,14 +6080,15 @@ div#filters {
 .boxed .box-layout {
     max-width: 1230px;
     margin: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
+	background-color: #000;
 }
 
 
 
 
 .box-layout {
-    background: #fff;
+    background: #0000;
 }
 
 .box-style {

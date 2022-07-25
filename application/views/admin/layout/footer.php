@@ -147,12 +147,14 @@ swal({
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-  <footer class="main-footer">
+  <footer  style="color:#707070;" class="main-footer">
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.0-alpha
+      <b></b>
     </div>
-    <strong>Copyright &copy; 2014-2018 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-    reserved.
+    <strong >Copyright &copy; <script type='text/javascript'>
+                    var creditsyear = new Date();
+                    document.write(creditsyear.getFullYear());
+                </script> <a style="color:#707070;" href="http://iswantoprofile.my.id" target='blank'>Iswanto Group</a></strong>
   </footer>
 
   <!-- Control Sidebar -->

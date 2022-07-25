@@ -64,6 +64,16 @@ class Nav_model extends CI_Model {
 		$query = $this->db->get();
 		return $query->result();
 	}
+	// lembaga
+	public function nav_lembaga() {
+		$this->db->select('*');
+		$this->db->from('berita');
+		$this->db->where(array(	'jenis_berita'	=> 'Lembaga',
+								'status_berita'	=> 'Publish'));
+		$this->db->order_by('urutan','ASC');
+		$query = $this->db->get();
+		return $query->result();
+	}
 
 	// Navigasi profil
 	public function nav_layanan() {

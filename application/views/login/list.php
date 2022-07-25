@@ -27,8 +27,8 @@
     }
   </style>
 </head>
-<body class="hold-transition login-page" style="background-color: #000;">
-<div class="login-box">
+<body class="hold-transition login-page" style="background-color: white;">
+<div class="login-box" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)">
   
   <!-- /.login-logo -->
   <div class="card">
@@ -39,7 +39,7 @@
         <h2 style="font-weight: bold; font-size: 18px; margin-top: 20px;"><?php echo $this->website->namaweb() ?></h2>
       </div>
 
-      <p class="login-box-msg">Masukkan username dan password</p>
+      <!-- <p class="login-box-msg">Masukkan username dan password</p> -->
 
       <?php 
       // Notifikasi error
@@ -48,12 +48,11 @@
       // Form open 
       echo form_open(base_url('login'));
        ?>
-
         <div class="form-group">
-          <input type="text" name="username" class="form-control" placeholder="Username">
+          <input type="text" name="username" class="form-control" id="validationServer03" placeholder="Username" required>
         </div>
         <div class="form-group">
-          <input type="password" name="password" class="form-control" placeholder="Password">
+          <input type="password" name="password" class="form-control" placeholder="Password" required>
         </div>
         <div class="row">
           <div class="col-12">
@@ -77,6 +76,7 @@
     <!-- /.login-card-body -->
   </div>
 </div>
+
 <!-- /.login-box -->
 <!-- SWEETALERT -->
 <?php if($this->session->flashdata('sukses')) { ?>
