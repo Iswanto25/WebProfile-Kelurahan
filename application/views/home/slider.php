@@ -8,10 +8,12 @@
 <?php $i=1; foreach($slider as $slider): ?>
 <div class="item <?php if($i==1) { echo 'active'; } ?>">
     <div class="slider-item">
-       
+        <img src="<?php echo base_url('assets/upload/image/'.$slider->gambar); ?>" alt="bg-slider-2">
         <div class="slider-content-area">
             <div class="container text-center">
-                <!-- <div class="row"> -->
+            <!-- <img src="<?php echo $this->website->logo() ?>" alt="logo" class="img-responsive img-responsive center-block" style="width: 120px;" /> -->
+            <!-- <img src="<?php echo $this->website->icon(); ?>" alt="<?php echo $this->website->namaweb(); ?>" class="img-responsive img-responsive center-block" style="max-width: 200px; height: auto;"> -->
+            <!-- <div class="row"> -->
                     <!-- <div class="col-md-6"></div> -->
                     <!-- .col-md-6 -->
                     <!-- <div class="col-md-6"> -->

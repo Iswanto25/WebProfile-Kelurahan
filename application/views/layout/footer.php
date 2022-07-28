@@ -79,6 +79,11 @@ $nav_profil     = $this->nav_model->nav_profil();
                                 <span><?php echo $site->email ?></span>
 
                             </li>
+                            <li>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span><?php echo $site->tentang ?></span>
+
+                            </li>
                         </ul>
                     </div>
                     <!-- .address -->
@@ -95,6 +100,7 @@ $nav_profil     = $this->nav_model->nav_profil();
                       </div>
                       <div class="col-sm">
                         <h1>hello</h1>
+                        
                       </div>
                     </div>
                     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2691576632627!2d109.12972504840029!3d-6.881423337702933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658371522203!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -121,7 +127,7 @@ $nav_profil     = $this->nav_model->nav_profil();
         <div class="footer-bottom">
           <div class="copyright-txt">
           <p>Copyright &copy; <?php 
-          echo date('Y')?> <a href="http://iswantoprofile.my.id"> Iswanto Group</a></p>
+          echo date('Y')?> <a href="http://iswantoprofile.my.id">Iswanto Group</a></p>
           </div>
         </div>
       </div>
