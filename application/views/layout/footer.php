@@ -99,7 +99,7 @@ $nav_profil     = $this->nav_model->nav_profil();
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0772333973014!2d109.12836921435725!3d-6.8813510950274335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658436135301!5m2!1sid!2sid" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                       </div>
                       <div class="col-sm">
-                        <h1>hello</h1>
+                        <?php include ("kunjungan.php") ?>
                         
                       </div>
                     </div>
@@ -180,10 +180,31 @@ $nav_profil     = $this->nav_model->nav_profil();
 <!-- DataTables JS -->
 <script src="<?php echo base_url() ?>assets/admin/plugins/datatables/jquery.dataTables.js"></script>
 <script src="<?php echo base_url() ?>assets/admin/plugins/datatables/dataTables.bootstrap4.js"></script>
-<script>
+<script type="text/javascript">
   $(function () {
     $("#example1").DataTable();
   });
+
+  const sekarang = new Date();
+  const tgl = sekarang.getDate();
+  var namahari = ("Minggu Senin Selasa Rabu Kamis Jum'at Sabtu");
+  var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+  namahari = namahari.split(" ");
+  namabulan = namabulan.split(" ");
+  const hari = sekarang.getDay();
+  const bln = sekarang.getMonth();
+  const thn = sekarang.getFullYear();
+  document.getElementById("tanggal").innerHTML = namahari[hari] + ", " + tgl + " " + namabulan[bln] + " " + thn;
+
+  // 1 detik = 1000
+  window.setTimeout("waktu()", 1000);
+
+  function waktu() {
+    var tanggal = new Date();
+    setTimeout("waktu()", 1000);
+    document.getElementById("jam").innerHTML = tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal
+        .getSeconds();
+}
 </script>
 <script>
   $(function () {
@@ -206,5 +227,8 @@ $nav_profil     = $this->nav_model->nav_profil();
       toolbar: { fa: true }
     })
   })
+</script>
+<script type="text/javascript">
+
 </script>
 </html>

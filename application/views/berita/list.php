@@ -51,7 +51,7 @@
                                 <!-- .pagination_option -->
                             </div>
                             <!-- .col-md-8 -->
-                            <div class="col-md-4">
+                            <!-- <div class="col-md-4">
                                 <div class="sidebar">
                                     <div class="widget">
                                         <h4 class="sidebar-widget-title">Berita Terpopuler</h4>
@@ -62,24 +62,24 @@
                                                         <div class="popular-news-img" style="width: 80px; height: 80px;">
                                                             <a href="#"><img src="<?php if($populer->gambar=="") { echo base_url('assets/upload/image/thumbs/'.$site->icon); }else{ echo base_url('assets/upload/image/thumbs/'.$populer->gambar); } ?>" alt="popular-news-img-1" /></a>
                                                         </div>
-                                                        <!-- .popular-news-img -->
+                                                  
                                                         <div class="popular-news-contant">
                                                             <h5><a href="<?php echo base_url('berita/read/' . $populer->slug_berita); ?>"><?php echo $populer->judul_berita; ?></a></h5>
                                                             <p>
                                                                 <i class="fa fa-calendar"></i> <?php echo date('d M Y', strtotime($populer->tanggal_publish)); ?> <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $populer->hits; ?> Viewer</a>
                                                             </p>
                                                         </div>
-                                                        <!-- .popular-news-img -->
+                                                       
                                                     </li>
                                                 <?php } ?>
                                             </ul>
 
                                         </div>
-                                        <!-- .widget-content -->
+                                        
                                     </div>
                                 </div>
-                                <!-- .sidebar -->
-                            </div>
+                               
+                            </div> -->
                             <!-- .col-md-4 -->
                         </div>
                         <!-- .row -->

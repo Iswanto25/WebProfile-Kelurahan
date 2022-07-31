@@ -76,24 +76,10 @@
             </ul>
           </li> 
 
-          <!-- BERITA DAN INFORMASI -->
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-download"></i>
-              <p>FILE DOWNLOAD <i class="right fa fa-angle-left"></i></p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item"><a href="<?php echo base_url('admin/download') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p>Data Download</p></a>
-              </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/download/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Download</p></a>
-              </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/kategori_download') ?>" class="nav-link"><i class="fa fa-tags nav-icon"></i><p>Kategori Download</p></a>
-              </li>
-            </ul>
-          </li> 
+          
 
           <!-- VIDEO -->
-          <!-- <li class="nav-item has-treeview">
+          <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-youtube"></i>
               <p>VIDEO YOUTUBE <i class="right fa fa-angle-left"></i></p>
@@ -104,7 +90,7 @@
               <li class="nav-item"><a href="<?php echo base_url('admin/video/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Video Youtube</p></a>
               </li>
             </ul>
-          </li> -->
+          </li>
 
           <!-- AGENDA KEGIATAN -->
           <li class="nav-item has-treeview">
@@ -120,34 +106,6 @@
               
             </ul>
           </li>
-
-          <!-- CLIENT -->
-          <!-- <li class="nav-item">
-            <a href="<?php echo base_url('admin/client') ?>" class="nav-link">
-              <i class="nav-icon fa fa-group"></i>
-              <p>
-                DATA CLIENT
-              </p>
-            </a>
-          </li> -->
-          <?php if($this->session->userdata('akses_level')=="Admin") { ?>
-          <!-- STAFF -->
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fa fa-users"></i>
-              <p>STAFF &amp; TEAM <i class="right fa fa-angle-left"></i></p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item"><a href="<?php echo base_url('admin/staff') ?>" class="nav-link"><i class="fa fa-table nav-icon"></i><p>Data Staff &amp; Team</p></a>
-              </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/staff/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Staff &amp; Team</p></a>
-              </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/bagian') ?>" class="nav-link"><i class="fa fa-tags nav-icon"></i><p>Bagian/Departemen</p></a>
-              </li>
-              
-            </ul>
-          </li> 
-        <?php } ?>
           
           <?php if($this->session->userdata('akses_level')=="Admin") { ?>
           <!-- MENU USER -->
@@ -167,17 +125,9 @@
               <p>KONFIGURASI <i class="right fa fa-angle-left"></i></p>
             </a>
             <ul class="nav nav-treeview">
-              
               <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi') ?>" class="nav-link"><i class="fa fa-wrench nav-icon"></i><p>Konfigurasi Umum</p></a>
               </li>
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/direktur') ?>" class="nav-link"><i class="fa fa-sitemap nav-icon"></i><p>Update Data Pejabat</p></a>
-              </li>
-               <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/email_setting') ?>" class="nav-link"><i class="fa fa-sitemap nav-icon"></i><p>Email Setting</p></a>
-              </li>
               <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/logo') ?>" class="nav-link"><i class="fa fa-home nav-icon"></i><p>Ganti Logo</p></a>
-              </li>
-
-              <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/footer') ?>" class="nav-link"><i class="fa fa-home nav-icon"></i><p>Ganti Gambar Footer</p></a>
               </li>
               <li class="nav-item"><a href="<?php echo base_url('admin/konfigurasi/icon') ?>" class="nav-link"><i class="fa fa-upload nav-icon"></i><p>Ganti Icon</p></a>
               </li>

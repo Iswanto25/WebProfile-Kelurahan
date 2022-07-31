@@ -119,13 +119,10 @@ $site = $this->konfigurasi_model->listing();
         <!-- </ul> -->
     </ul>
     </div>
-    <div class="social-box" stye="color:white;">
-        <p id="demo">
-          <?php 
-          date_default_timezone_set('Asia/Jakarta');
-          echo date('Y.m.d H:i:s'); ?>
-        </p>
-        </div>
+    <div class="social-box pull-right" stye="color:white; padding:0px 10px;">
+        <p id="jam">  </p>
+        <p id="tanggal">  </p>
+    </div>
     <!-- .donate-option -->
 </div>
 
