@@ -4,9 +4,9 @@
         <!-- <div class="row"> -->
             <div class="about-greenforest">
                 <?php $noprof=1; foreach($profil as $profil) { if($noprof==1) { ?>
-                    <img style="width:200px;" src="<?php echo base_url('assets/upload/image/'.$profil->gambar) ?>" alt="" class="img-responsive img-responsive center-block" />
+                    <!-- <img style="width:200px;" src="<?php echo base_url('assets/upload/image/'.$profil->gambar) ?>" alt="" class="img-responsive img-responsive center-block" /> -->
                 <!-- <div class="row"> -->
-                        <div class="about-greenforest-content">
+                        <div style="color:black;" class="text-center about-greenforest-content">
                             <h2><?php echo $profil->judul_berita ?></h2>
                             <?php echo $profil->isi ?>
                         </div>
