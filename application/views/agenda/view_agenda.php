@@ -34,6 +34,7 @@ h4.judul {
 <div id="content" role="main">
 <div class="page-header dark larger larger-desc">
 <div class="container">
+	<h2 class="text-center">Agenda</h2>
 <div class="row">
     <div class="col-md-12">
         <h1><?php echo $title ?></h1>

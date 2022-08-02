@@ -82,14 +82,10 @@ $nav_layanan                = $this->nav_model->nav_layanan();
                         <!-- <li>
                             <a href="<?php echo base_url('galeri'); ?>">GALERI</a>
                         </li> -->
-                        <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GALERI <span class="caret"></span></a>
-                <ul class="dropdown-menu sub-menu">
-                    
-                    <li class="sub-active"><a href="<?php echo base_url('galeri'); ?>"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Galeri Foto</a></li>
-                    <li class="sub-active"><a href="<?php echo base_url('video'); ?>"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Galeri Video</a></li>                   
-                </ul>
-            </li>
+                        
+                        <li>
+                            <a href="<?php echo base_url('galeri') ?>">GALERI</a>
+                        </li>
                         <li>
                             <a href="<?php echo base_url('agenda') ?>">Agenda</a>
                         </li>

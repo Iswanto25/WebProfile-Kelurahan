@@ -57,7 +57,7 @@ $nav_profil     = $this->nav_model->nav_profil();
 <div class="row">
     <div class="footer-top">
         <div class="row">
-            <div class="col-md-6 col-sm-6">
+            <div class="col-sm-4 col-md-4">
                 <div class="footer-widgets">
                     <div class="widgets-title">
                         <h4 style="color:white;"><?php echo $site->namaweb ?></h4>
@@ -79,11 +79,11 @@ $nav_profil     = $this->nav_model->nav_profil();
                                 <span><?php echo $site->email ?></span>
 
                             </li>
-                            <li>
+                            <!-- <li>
                                 <i class="fa fa-calendar" aria-hidden="true"></i>
                                 <span><?php echo $site->tentang ?></span>
 
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <!-- .address -->
@@ -91,16 +91,37 @@ $nav_profil     = $this->nav_model->nav_profil();
                 <!-- .footer-widgets -->
             </div>
             <!-- .col-md-4 -->
-            <div class="col-md-6 col-sm-6">
-                <div class="footer-widgets">
+            <div class="col-sm-4 col-md-4">
+                <div class="address-box">
+                  <ul class="address">
+                  <li>
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <span><?php echo $site->tentang ?></span>
+
+                            </li>
+                  </ul>
                     <!-- .widgets-title -->
-                    <div class="row">
+                    <!-- <div class="row">
                       <div class="col-sm">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0772333973014!2d109.12836921435725!3d-6.8813510950274335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658436135301!5m2!1sid!2sid" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0772333973014!2d109.12836921435725!3d-6.8813510950274335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658436135301!5m2!1sid!2sid" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                       </div>
                       <div class="col-sm">
-                        <?php include ("kunjungan.php") ?>
+                        <?php include_once ("kunjungan.php") ?>
                         
+                      </div>
+                        
+                      </div>
+                    </div> -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2691576632627!2d109.12972504840029!3d-6.881423337702933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658371522203!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
+                <!-- .footer-widgets -->
+            </div>
+            <div class="col-sm-4 col-md-4">
+                <div class="footer-widgets">
+                    <!-- .widgets-title -->
+          
+                      <div class="col-sm">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0772333973014!2d109.12836921435725!3d-6.8813510950274335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658436135301!5m2!1sid!2sid" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                       </div>
                     </div>
                     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2691576632627!2d109.12972504840029!3d-6.881423337702933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9cf780320d1%3A0x3f473ff8416a3749!2sKantor%20Kelurahan%20Randugunting%20Kota%20Tegal!5e0!3m2!1sid!2sid!4v1658371522203!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->

@@ -79,7 +79,7 @@
           
 
           <!-- VIDEO -->
-          <li class="nav-item has-treeview">
+          <!-- <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fa fa-youtube"></i>
               <p>VIDEO YOUTUBE <i class="right fa fa-angle-left"></i></p>
@@ -90,7 +90,7 @@
               <li class="nav-item"><a href="<?php echo base_url('admin/video/tambah') ?>" class="nav-link"><i class="fa fa-plus nav-icon"></i><p>Tambah Video Youtube</p></a>
               </li>
             </ul>
-          </li>
+          </li> -->
 
           <!-- AGENDA KEGIATAN -->
           <li class="nav-item has-treeview">
